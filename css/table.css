@@ -1,0 +1,10 @@
+/* Style for table rows */
+table tr {
+    border-bottom: 1px solid black;
+}
+
+/* Style for table cells (columns) */
+table td {
+    border-right: 1px solid black;
+    padding: 8px;
+}
