@@ -11,6 +11,7 @@
 
 <body>
     <!-- Navbar Bootstrap -->
+    <!-- Navbar Bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">ProgWEB</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -30,26 +31,43 @@
     </nav>
 
     <div class="container mt-5">
-        <h1 class="mb-4">Cadastro de Cliente</h1>
+        <h1 class="mb-4">Cadastro de Fornecedor</h1>
         <form id="client-form">
             <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" class="form-control" id="nome" name="nome" required>
+                <p for="avatar">Imagem do Perfil:</p>
+                <img src="" id="image-preview" style="max-width: 200px;">
+                <input type="file" class="form-control-file" id="avatar" name="avatar" onchange="previewImage()">
+                <br>
             </div>
 
             <div class="form-group">
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+                <label for="razao">Razao:</label>
+                <input type="text" class="form-control" id="razao" name="razao" required>
             </div>
 
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="cpf_cnpj">CPF/CNPJ:</label>
+                <input type="text" class="form-control" id="cpf_cnpj" name="cpf_cnpj" required>
             </div>
 
             <div class="form-group">
-                <label for="salario">Salário:</label>
-                <input type="number" class="form-control" id="salario" name="salario" required>
+                <label for="contato">Contato:</label>
+                <input type="contato" class="form-control" id="contato" name="contato" required>
+            </div>
+
+            <div class="form-group">
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" class="form-control" id="logradouro" name="logradouro" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="form-control" id="cidade" name="cidade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="uf">UF:</label>
+                <input type="text" class="form-control" id="uf" name="uf" required>
             </div>
 
             <button type="submit" id="btn" class="btn btn-primary">Cadastrar</button>
@@ -67,7 +85,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Page script -->
-    <script src="js/main.js" type="module"></script>
+    <script src="js/fornecedores.js" type="module"></script>
 </body>
 
 </html>
